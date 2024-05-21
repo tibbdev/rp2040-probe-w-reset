@@ -32,11 +32,12 @@
 
 // PIO config
 #define PROBE_SM 0
-#define PROBE_PIN_OFFSET 12
-#define PROBE_PIN_SWCLK (PROBE_PIN_OFFSET + 0)
+#define PROBE_PIN_OFFSET 9
+#define PROBE_PIN_SWCLK (PROBE_PIN_OFFSET + 0) // Pin 9
+#define PROBE_PIN_SWDIO (PROBE_PIN_OFFSET + 1) // Pin 10
+#define PROBE_PIN_RESET (PROBE_PIN_OFFSET + 2) // Pin 11
 // For level-shifted input.
-#define PROBE_PIN_SWDI (PROBE_PIN_OFFSET + 1)
-#define PROBE_PIN_SWDIO (PROBE_PIN_OFFSET + 2)
+#define PROBE_PIN_SWDI (PROBE_PIN_OFFSET + 3)  // Pin 12
 
 // UART config
 #define PROBE_UART_TX 4
@@ -50,6 +51,6 @@
 #define PROBE_UART_RX_LED 7
 #define PROBE_UART_TX_LED 8
 
-#define PROBE_PRODUCT_STRING "Debug Probe (CMSIS-DAP)"
+#define PROBE_PRODUCT_STRING "Debug Probe 2040 (CMSIS-DAP)"
 
 #endif

@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.12)
 
+set(PICO_SDK_PATH /mnt/d/PiPico/Pico-SDKv1.5.1/pico-sdk)
+set(PICO_TOOLCHAIN_PATH /mnt/d/PiPico/Pico-SDKv1.5.1/)
+
 include(pico_sdk_import.cmake)
 
 set(FREERTOS_KERNEL_PATH ${CMAKE_CURRENT_LIST_DIR}/freertos)
+
 include(FreeRTOS_Kernel_import.cmake)
 
 project(debugprobe)
