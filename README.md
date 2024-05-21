@@ -47,6 +47,11 @@ This will build with the configuration for the Pico and call the output program 
 
 Note that if you first ran through the whole sequence to compile for the Debug Probe, then you don't need to start back at the top. You can just go back to the `cmake` step and start from there.
 
+# Pinout
+
+- **Pin 9** : SWDCLK
+- **Pin 10** : SWDIO
+- **Pin 11** : RESET
 
 # TODO
 - AutoBaud selection, as PIO is a capable frequency counter
